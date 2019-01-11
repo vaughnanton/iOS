@@ -71,5 +71,7 @@ class ViewController: UIViewController
         return emoji[card.identifier] ?? "?"
     }
     
+    //add a begin new game button and shuffle cards
+    
 }
 
