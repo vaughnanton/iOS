@@ -23,7 +23,6 @@ class ViewController: UIViewController
     
     @IBOutlet var cardButtons: [UIButton]!
     
-    
     @IBAction func touchCard(_ sender: UIButton) {
         flipCount += 1
         if let cardNumber = cardButtons.index(of: sender) {
@@ -71,7 +70,15 @@ class ViewController: UIViewController
         return emoji[card.identifier] ?? "?"
     }
     
-    //add a begin new game button and shuffle cards
+    func resetGame() {
+        
+    }
+    
+    @IBOutlet var newGame: UIButton!
+    
+    @IBAction func touchNewGameButton(_ sender: UIButton) {
+        flipCount = 0
+    }
     
 }
 
