@@ -35,6 +35,10 @@ class Concentration
         }
     }
     
+    func resetGame() {
+        
+    }
+    
     init(numberOfPairsOfCards: Int) {
         for _ in 0..<numberOfPairsOfCards {
             let card = Card()

@@ -70,14 +70,11 @@ class ViewController: UIViewController
         return emoji[card.identifier] ?? "?"
     }
     
-    func resetGame() {
-        
-    }
-    
     @IBOutlet var newGame: UIButton!
     
     @IBAction func touchNewGameButton(_ sender: UIButton) {
         flipCount = 0
+        var _ = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
     }
     
 }
