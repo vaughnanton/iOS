@@ -70,12 +70,18 @@ class ViewController: UIViewController
         return emoji[card.identifier] ?? "?"
     }
     
-    @IBOutlet var newGame: UIButton!
-    
-    @IBAction func touchNewGameButton(_ sender: UIButton) {
+    @IBAction func resetGame(_ sender: UIButton) {
         flipCount = 0
-        var _ = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+        emojiChoices += emoji.values
+        emoji = [Int:String]()
+        for index in cardButtons.indices {
+            let button = cardButtons[index]
+            button.setTitle("", for: UIControlState.normal)
+            button.backgroundColor = #colorLiteral(red: 1, green: 0.6470884837, blue: 0.3386492052, alpha: 1)
+            game.cards[index].isFaceUp = false
+            game.cards[index].isMatched = false
+            game.indexOfOneAndOnlyFaceUpCard = nil
+        }
     }
-    
 }
 

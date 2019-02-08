@@ -135,7 +135,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchNewGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abX-FM-6q8"/>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKa-Ll-6yM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEv-MG-igQ">
@@ -151,7 +151,6 @@
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="EEv-MG-igQ" id="WDi-Yy-SxE"/>
-                        <outlet property="newGame" destination="AO9-ct-Y3h" id="Fup-vO-kgd"/>
                         <outletCollection property="cardButtons" destination="bLd-9S-VhV" collectionClass="NSMutableArray" id="Ceq-kg-LWI"/>
                         <outletCollection property="cardButtons" destination="33y-xd-3v8" collectionClass="NSMutableArray" id="Jpp-yg-9Rv"/>
                         <outletCollection property="cardButtons" destination="v2S-hp-BXZ" collectionClass="NSMutableArray" id="8ji-JY-WSQ"/>
