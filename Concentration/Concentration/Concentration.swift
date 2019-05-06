@@ -47,6 +47,6 @@ class Concentration
         // TODO: Shuffle the cards
         // positions 1-12
         // each ui button would get a random index number in array?
-        // begin game
+        // begin the game
     }
 }
