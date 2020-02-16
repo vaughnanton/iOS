@@ -110,6 +110,7 @@
 				TargetAttributes = {
 					1521AF9C21DF2A3000B1BBB5 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -304,7 +305,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vahagn.antonyan.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,7 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vahagn.antonyan.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

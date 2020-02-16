@@ -12,6 +12,9 @@ class Concentration
 {
     var cards = [Card]()
     
+    var score = 0
+    var flipCount = 0
+    
     var indexOfOneAndOnlyFaceUpCard: Int?
     
     func chooseCard(at index: Int) {
@@ -21,6 +24,11 @@ class Concentration
                 if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
+                    score += 2
+                } else {
+                    if cards[index].hasBeenSeen == true  {
+                        score -= 1
+                    }
                 }
                 cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = nil
@@ -33,10 +41,7 @@ class Concentration
                 indexOfOneAndOnlyFaceUpCard = index
             }
         }
-    }
-    
-    func resetGame() {
-        
+        flipCount += 1
     }
     
     init(numberOfPairsOfCards: Int) {
@@ -44,9 +49,6 @@ class Concentration
             let card = Card()
             cards += [card, card]
         }
-        // TODO: Shuffle the cards
-        // positions 1-12
-        // each ui button would get a random index number in array?
-        // begin the game
+        cards.shuffle()
     }
 }
